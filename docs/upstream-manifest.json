@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/SparkDevNetwork/Rock",
+  "ref": "release-19.0",
+  "files": [
+    {
+      "path": "RockWeb/Blocks/Security/CaptivePortal.ascx",
+      "blobSha": "0c1fbd655df7e300acb8a11f7721edace65cec4a"
+    },
+    {
+      "path": "RockWeb/Blocks/Security/CaptivePortal.ascx.cs",
+      "blobSha": "068b8bf4f4becc51942ac4eba27392f584dcd468"
+    },
+    {
+      "path": "Rock/Web/UI/RockPage.cs",
+      "blobSha": "67bc772caa38e47200ebcd7b7f7048ade298c378"
+    },
+    {
+      "path": "Rock.Rest/Controllers/PresenceController.cs",
+      "blobSha": "9a3a6216919edc39e1152a149ebd85ef7b3e360e"
+    }
+  ]
+}

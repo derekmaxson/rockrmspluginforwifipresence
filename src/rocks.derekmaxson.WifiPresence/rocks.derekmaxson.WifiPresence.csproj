@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>rocks.derekmaxson.WifiPresence</AssemblyName>
+    <RootNamespace>rocks.derekmaxson.WifiPresence</RootNamespace>
+    <Version>0.1.0</Version>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Rock">
+      <HintPath>$(RockBinPath)/Rock.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>$(RockBinPath)/EntityFramework.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <Target Name="ValidateRockReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(RockBinPath)/Rock.dll')" Text="Set RockBinPath to the bin directory from your Rock v19 test instance." />
+    <Error Condition="!Exists('$(RockBinPath)/EntityFramework.dll')" Text="EntityFramework.dll is required from the same Rock bin directory." />
+  </Target>
+</Project>
